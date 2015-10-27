@@ -1,0 +1,82 @@
+{
+  "title": "ROOT",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "10": {
+      "title": "METHODS",
+      "id": 3,
+      "attr": {
+        "position": [
+          304.5562500000001,
+          272.5,
+          3
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "1": {
+          "title": "Fast R-CNN",
+          "id": 20
+        },
+        "2": {
+          "title": "Faster R-CNN",
+          "id": 21
+        },
+        "3": {
+          "title": "YOLO",
+          "id": 22
+        },
+        "4": {
+          "title": "probabilistic joint orientation estimation",
+          "id": 23
+        },
+        "5": {
+          "title": "R*CNN",
+          "id": 24
+        }
+      }
+    },
+    "-22": {
+      "title": "TASKS",
+      "id": 12,
+      "attr": {
+        "position": [
+          135.84375,
+          253.29999999999995,
+          4
+        ],
+        "style": {}
+      },
+      "ideas": {
+        "12": {
+          "title": "continuous orientation tracking",
+          "attr": {
+            "style": {}
+          },
+          "id": 13
+        },
+        "22": {
+          "title": "joint detection in one shot",
+          "id": 14,
+          "attr": {
+            "style": {}
+          }
+        },
+        "23": {
+          "title": "joint pose estimation with probabilistic model",
+          "id": 16
+        },
+        "24": {
+          "title": "occlusion detection, how big is the occlusion",
+          "id": 17
+        },
+        "25": {
+          "title": "movement type in a group of people",
+          "id": 18
+        }
+      }
+    }
+  },
+  "links": []
+}
