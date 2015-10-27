@@ -17,15 +17,106 @@
       "ideas": {
         "1": {
           "title": "Fast R-CNN",
-          "id": 20
+          "id": 20,
+          "ideas": {
+            "1": {
+              "title": "any input size",
+              "id": 26
+            },
+            "2": {
+              "title": "CNN for feature map",
+              "id": 27
+            },
+            "3": {
+              "title": "feature map pooling to fixed size",
+              "id": 28
+            },
+            "4": {
+              "title": "fc layers -> feature vectors -> loss",
+              "id": 32,
+              "ideas": {}
+            }
+          }
         },
         "2": {
           "title": "Faster R-CNN",
-          "id": 21
+          "id": 21,
+          "ideas": {
+            "1": {
+              "title": "any input size",
+              "id": 34
+            },
+            "2": {
+              "title": "fixed-size sliding window  on feature map",
+              "id": 36
+            },
+            "4": {
+              "title": "RPN",
+              "id": 38,
+              "ideas": {
+                "1": {
+                  "title": "one sliding window on feature map -> multiple scale/ratio anchor boxes in original image",
+                  "id": 37,
+                  "attr": {
+                    "style": {}
+                  }
+                },
+                "2": {
+                  "title": "objectness+bbox loss",
+                  "id": 39
+                }
+              }
+            },
+            "5": {
+              "title": "Fast R-CNN",
+              "id": 41,
+              "ideas": {}
+            },
+            "6": {
+              "title": "pipline",
+              "id": 44,
+              "ideas": {
+                "1": {
+                  "title": "init RPN with model, fine tuning, making proposals",
+                  "id": 45
+                },
+                "2": {
+                  "title": "init FRCNN with model, fine tuning, using proposals from prev step",
+                  "id": 46
+                },
+                "3": {
+                  "title": "init RPN with FRCNN, fine tuning fc, making proposals",
+                  "id": 47
+                },
+                "4": {
+                  "title": "init FRCNN with prev model, fine tuning fc",
+                  "id": 48
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {}
+          }
         },
         "3": {
           "title": "YOLO",
-          "id": 22
+          "id": 22,
+          "ideas": {
+            "1": {
+              "title": "wrap to fixed-size input",
+              "id": 50
+            },
+            "2": {
+              "title": "7x7 feature map -> 7x7 blocks in original img",
+              "id": 51
+            },
+            "3": {
+              "title": "each block responsible for the obj whose center is in this block",
+              "id": 53,
+              "ideas": {}
+            }
+          }
         },
         "4": {
           "title": "probabilistic joint orientation estimation",
@@ -34,6 +125,24 @@
         "5": {
           "title": "R*CNN",
           "id": 24
+        }
+      }
+    },
+    "11": {
+      "title": "basic design",
+      "id": 60,
+      "ideas": {
+        "1": {
+          "title": "whole body detection & orientation estimation",
+          "id": 61
+        },
+        "2": {
+          "title": "body & head joint detection & orientation estimation",
+          "id": 62
+        },
+        "3": {
+          "title": "additional action detection",
+          "id": 63
         }
       }
     },
