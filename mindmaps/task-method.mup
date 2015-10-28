@@ -120,7 +120,47 @@
         },
         "4": {
           "title": "probabilistic joint orientation estimation",
-          "id": 23
+          "id": 23,
+          "ideas": {
+            "1": {
+              "title": "continuous extimation with Markov model",
+              "id": 65,
+              "ideas": {
+                "1": {
+                  "title": "dynamic model",
+                  "id": 73
+                }
+              }
+            },
+            "2": {
+              "title": "pedestrian bbox input",
+              "id": 66
+            },
+            "3": {
+              "title": "8-direction body/head classifiers",
+              "id": 68,
+              "ideas": {
+                "1": {
+                  "title": "multi-layer Neural Network",
+                  "id": 71
+                }
+              }
+            },
+            "4": {
+              "title": "body/head location constrain",
+              "id": 70,
+              "ideas": {
+                "1": {
+                  "title": "Pictorial Structure",
+                  "id": 72
+                }
+              }
+            },
+            "5": {
+              "title": "probabilistic model to continuous result",
+              "id": 74
+            }
+          }
         },
         "5": {
           "title": "R*CNN",
