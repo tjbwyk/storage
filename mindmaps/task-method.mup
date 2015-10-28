@@ -15,156 +15,234 @@
         "style": {}
       },
       "ideas": {
-        "1": {
-          "title": "Fast R-CNN",
-          "id": 20,
+        "6": {
+          "title": "FRAMEWORKS",
+          "id": 76,
           "ideas": {
             "1": {
-              "title": "any input size",
-              "id": 26
-            },
-            "2": {
-              "title": "CNN for feature map",
-              "id": 27
-            },
-            "3": {
-              "title": "feature map pooling to fixed size",
-              "id": 28
-            },
-            "4": {
-              "title": "fc layers -> feature vectors -> loss",
-              "id": 32,
-              "ideas": {}
-            }
-          }
-        },
-        "2": {
-          "title": "Faster R-CNN",
-          "id": 21,
-          "ideas": {
-            "1": {
-              "title": "any input size",
-              "id": 34
-            },
-            "2": {
-              "title": "fixed-size sliding window  on feature map",
-              "id": 36
-            },
-            "4": {
-              "title": "RPN",
-              "id": 38,
-              "ideas": {
-                "1": {
-                  "title": "one sliding window on feature map -> multiple scale/ratio anchor boxes in original image",
-                  "id": 37,
-                  "attr": {
-                    "style": {}
-                  }
-                },
-                "2": {
-                  "title": "objectness+bbox loss",
-                  "id": 39
-                }
-              }
-            },
-            "5": {
               "title": "Fast R-CNN",
-              "id": 41,
-              "ideas": {}
-            },
-            "6": {
-              "title": "pipline",
-              "id": 44,
               "ideas": {
                 "1": {
-                  "title": "init RPN with model, fine tuning, making proposals",
-                  "id": 45
+                  "title": "any input size",
+                  "id": 80
                 },
                 "2": {
-                  "title": "init FRCNN with model, fine tuning, using proposals from prev step",
-                  "id": 46
+                  "title": "CNN for feature map",
+                  "id": 81
                 },
                 "3": {
-                  "title": "init RPN with FRCNN, fine tuning fc, making proposals",
-                  "id": 47
+                  "title": "feature map pooling to fixed size",
+                  "id": 82
                 },
                 "4": {
-                  "title": "init FRCNN with prev model, fine tuning fc",
-                  "id": 48
+                  "title": "fc layers -> feature vectors -> loss",
+                  "ideas": {},
+                  "id": 83
                 }
-              }
-            }
-          },
-          "attr": {
-            "style": {}
-          }
-        },
-        "3": {
-          "title": "YOLO",
-          "id": 22,
-          "ideas": {
-            "1": {
-              "title": "wrap to fixed-size input",
-              "id": 50
-            },
-            "2": {
-              "title": "7x7 feature map -> 7x7 blocks in original img",
-              "id": 51
-            },
-            "3": {
-              "title": "each block responsible for the obj whose center is in this block",
-              "id": 53,
-              "ideas": {}
-            }
-          }
-        },
-        "4": {
-          "title": "probabilistic joint orientation estimation",
-          "id": 23,
-          "ideas": {
-            "1": {
-              "title": "continuous extimation with Markov model",
-              "id": 65,
-              "ideas": {
-                "1": {
-                  "title": "dynamic model",
-                  "id": 73
-                }
+              },
+              "id": 79,
+              "attr": {
+                "style": {}
               }
             },
             "2": {
-              "title": "pedestrian bbox input",
-              "id": 66
+              "title": "Faster R-CNN",
+              "attr": {
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "any input size",
+                  "id": 85
+                },
+                "2": {
+                  "title": "fixed-size sliding window  on feature map",
+                  "id": 86
+                },
+                "3": {
+                  "title": "RPN",
+                  "ideas": {
+                    "1": {
+                      "title": "one sliding window on feature map -> multiple scale/ratio anchor boxes in original image",
+                      "attr": {
+                        "style": {}
+                      },
+                      "id": 88
+                    },
+                    "2": {
+                      "title": "objectness+bbox loss",
+                      "id": 89
+                    }
+                  },
+                  "id": 87
+                },
+                "4": {
+                  "title": "Fast R-CNN",
+                  "ideas": {},
+                  "id": 90
+                },
+                "5": {
+                  "title": "pipline",
+                  "ideas": {
+                    "1": {
+                      "title": "init RPN with model, fine tuning, making proposals",
+                      "id": 92
+                    },
+                    "2": {
+                      "title": "init FRCNN with model, fine tuning, using proposals from prev step",
+                      "id": 93
+                    },
+                    "3": {
+                      "title": "init RPN with FRCNN, fine tuning fc, making proposals",
+                      "id": 94
+                    },
+                    "4": {
+                      "title": "init FRCNN with prev model, fine tuning fc",
+                      "id": 95
+                    }
+                  },
+                  "id": 91
+                }
+              },
+              "id": 84
             },
             "3": {
-              "title": "8-direction body/head classifiers",
-              "id": 68,
+              "title": "YOLO",
               "ideas": {
                 "1": {
-                  "title": "multi-layer Neural Network",
-                  "id": 71
+                  "title": "wrap to fixed-size input",
+                  "id": 97
+                },
+                "2": {
+                  "title": "7x7 feature map -> 7x7 blocks in original img",
+                  "id": 98
+                },
+                "3": {
+                  "title": "each block responsible for the obj whose center is in this block",
+                  "ideas": {},
+                  "id": 99
                 }
+              },
+              "id": 96,
+              "attr": {
+                "style": {}
               }
-            },
-            "4": {
-              "title": "body/head location constrain",
-              "id": 70,
-              "ideas": {
-                "1": {
-                  "title": "Pictorial Structure",
-                  "id": 72
-                }
-              }
-            },
-            "5": {
-              "title": "probabilistic model to continuous result",
-              "id": 74
             }
           }
         },
-        "5": {
-          "title": "R*CNN",
-          "id": 24
+        "7": {
+          "title": "ORIENTATION",
+          "id": 77,
+          "ideas": {
+            "1": {
+              "title": "probabilistic joint orientation estimation",
+              "ideas": {
+                "1": {
+                  "title": "continuous extimation with Markov model",
+                  "ideas": {
+                    "1": {
+                      "title": "dynamic model",
+                      "id": 102
+                    }
+                  },
+                  "id": 101
+                },
+                "2": {
+                  "title": "pedestrian bbox input",
+                  "id": 103
+                },
+                "3": {
+                  "title": "8-direction body/head classifiers",
+                  "ideas": {
+                    "1": {
+                      "title": "multi-layer Neural Network",
+                      "id": 105
+                    }
+                  },
+                  "id": 104
+                },
+                "4": {
+                  "title": "body/head location constrain",
+                  "ideas": {
+                    "1": {
+                      "title": "Pictorial Structure",
+                      "id": 107
+                    }
+                  },
+                  "id": 106
+                },
+                "5": {
+                  "title": "probabilistic model to continuous result",
+                  "id": 108
+                }
+              },
+              "id": 100,
+              "attr": {
+                "style": {}
+              }
+            }
+          }
+        },
+        "8": {
+          "title": "ACTION",
+          "id": 78,
+          "ideas": {
+            "1": {
+              "title": "R-CNN",
+              "id": 113,
+              "attr": {
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "based on R-CNN framework",
+                  "id": 114
+                },
+                "2": {
+                  "title": "different task -> fc layers -> output -> loss function",
+                  "id": 115
+                },
+                "3": {
+                  "title": "loss function combined",
+                  "id": 116
+                }
+              }
+            },
+            "2": {
+              "title": "R*CNN",
+              "id": 109,
+              "attr": {
+                "style": {}
+              },
+              "ideas": {
+                "1": {
+                  "title": "based on Fast R-CNN",
+                  "id": 117
+                },
+                "2": {
+                  "title": "primary + secondary region",
+                  "id": 119
+                },
+                "3": {
+                  "title": "score for each action",
+                  "id": 120
+                },
+                "4": {
+                  "title": "soft-max",
+                  "id": 121
+                },
+                "5": {
+                  "title": "how end-to-end training?",
+                  "id": 122,
+                  "attr": {
+                    "style": {
+                      "background": "#ff0000"
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -182,7 +260,8 @@
         },
         "3": {
           "title": "additional action detection",
-          "id": 63
+          "id": 63,
+          "ideas": {}
         }
       }
     },
