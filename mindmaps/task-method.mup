@@ -238,6 +238,12 @@
                     "style": {
                       "background": "#ff0000"
                     }
+                  },
+                  "ideas": {
+                    "1": {
+                      "title": "read the code",
+                      "id": 123
+                    }
                   }
                 }
               }
@@ -247,32 +253,107 @@
       }
     },
     "11": {
+      "title": "ideals",
+      "id": 140,
+      "ideas": {
+        "1": {
+          "title": "proposal network remain the same, modify fast rcnn part",
+          "id": 142
+        },
+        "2": {
+          "title": "yolo with multiple scale and ratio",
+          "id": 143
+        },
+        "3": {
+          "title": "yolo detect multiple obj with the same center",
+          "id": 146
+        }
+      }
+    },
+    "-32": {
       "title": "basic design",
       "id": 60,
       "ideas": {
         "1": {
           "title": "whole body detection & orientation estimation",
-          "id": 61
+          "id": 61,
+          "ideas": {
+            "1": {
+              "title": "proposal",
+              "id": 127
+            },
+            "2": {
+              "title": "classification: ped or not",
+              "id": 128
+            },
+            "3": {
+              "title": "classification: orientation",
+              "id": 129
+            }
+          }
         },
         "2": {
           "title": "body & head joint detection & orientation estimation",
-          "id": 62
+          "id": 62,
+          "ideas": {
+            "1": {
+              "title": "proposal",
+              "id": 131
+            },
+            "2": {
+              "title": "body/head detection",
+              "id": 132
+            },
+            "3": {
+              "title": "classification: with constrains",
+              "id": 133
+            },
+            "4": {
+              "title": "loss function to reflect the constrain",
+              "id": 134
+            }
+          }
         },
         "3": {
           "title": "additional action detection",
           "id": 63,
-          "ideas": {}
+          "ideas": {
+            "1": {
+              "title": "using secondary region for context?",
+              "id": 136
+            },
+            "2": {
+              "title": "action classification",
+              "id": 138,
+              "ideas": {}
+            },
+            "3": {
+              "title": "key points: occlusion?",
+              "id": 139,
+              "attr": {
+                "style": {}
+              }
+            }
+          }
         }
+      },
+      "attr": {
+        "style": {},
+        "position": [
+          243,
+          -17.200000000000045,
+          7
+        ]
       }
     },
-    "-22": {
+    "-16": {
       "title": "TASKS",
       "id": 12,
       "attr": {
         "position": [
-          135.84375,
-          253.29999999999995,
-          4
+          220,
+          -360,
+          6
         ],
         "style": {}
       },
@@ -306,5 +387,26 @@
       }
     }
   },
-  "links": []
+  "links": [
+    {
+      "ideaIdFrom": 139,
+      "ideaIdTo": 138,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 143,
+      "ideaIdTo": 146,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ]
 }
