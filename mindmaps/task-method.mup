@@ -453,20 +453,58 @@
             "style": {}
           }
         },
-        "5": {
-          "title": "proposal network remain the same, modify fast rcnn part",
-          "id": 142,
-          "attr": {
-            "style": {}
-          }
-        },
-        "6": {
-          "title": "directly modify RPN for classification?",
-          "id": 161
-        },
         "7": {
           "title": "how about using FCN for proposals?",
           "id": 164
+        },
+        "8": {
+          "title": "how to localize the head in a proposal",
+          "id": 167,
+          "ideas": {
+            "1": {
+              "title": "then combine the loss for both body and head",
+              "id": 168,
+              "ideas": {
+                "1": {
+                  "title": "classification contains direction",
+                  "id": 169
+                },
+                "2": {
+                  "title": "constraints between body and head",
+                  "id": 170,
+                  "ideas": {}
+                },
+                "3": {
+                  "title": "even more: other parts or context of body, for action classification",
+                  "id": 172
+                }
+              }
+            }
+          }
+        },
+        "5.5": {
+          "title": "combining localization and classification loss",
+          "id": 166,
+          "attr": {
+            "style": {}
+          },
+          "ideas": {
+            "1": {
+              "title": "proposal network remain the same, modify fast rcnn part",
+              "id": 142,
+              "attr": {
+                "style": {}
+              },
+              "ideas": {}
+            },
+            "2": {
+              "title": "directly modify RPN for classification?",
+              "id": 161,
+              "attr": {
+                "style": {}
+              }
+            }
+          }
         }
       },
       "attr": {
