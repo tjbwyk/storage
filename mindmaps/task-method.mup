@@ -252,6 +252,43 @@
         }
       }
     },
+    "11": {
+      "title": "others",
+      "id": 155,
+      "ideas": {
+        "1": {
+          "title": "selective search",
+          "id": 157
+        }
+      }
+    },
+    "12": {
+      "title": "Questions",
+      "id": 158,
+      "ideas": {
+        "1": {
+          "title": "Why  always proposal first and then classification?",
+          "id": 159,
+          "ideas": {
+            "1": {
+              "title": "because classification is more time consuming?",
+              "id": 160,
+              "ideas": {
+                "1": {
+                  "title": "if proposal is more time consuming, why not directly do classification",
+                  "id": 162
+                }
+              }
+            }
+          }
+        }
+      },
+      "attr": {
+        "style": {
+          "background": "#00ffff"
+        }
+      }
+    },
     "-32": {
       "title": "basic design",
       "id": 60,
@@ -402,6 +439,14 @@
                 },
                 "style": {}
               }
+            },
+            "5": {
+              "title": "maybe only for proposal",
+              "id": 153
+            },
+            "6": {
+              "title": "maybe only for few classes",
+              "id": 154
             }
           },
           "attr": {
@@ -414,6 +459,14 @@
           "attr": {
             "style": {}
           }
+        },
+        "6": {
+          "title": "directly modify RPN for classification?",
+          "id": 161
+        },
+        "7": {
+          "title": "how about using FCN for proposals?",
+          "id": 164
         }
       },
       "attr": {
