@@ -258,7 +258,36 @@
       "ideas": {
         "1": {
           "title": "selective search",
-          "id": 157
+          "id": 157,
+          "ideas": {
+            "1": {
+              "title": "hierarchical grouping",
+              "id": 175
+            },
+            "2": {
+              "title": "fast feature calculation when merging",
+              "id": 176
+            },
+            "3": {
+              "title": "which part is time consuming?",
+              "id": 178,
+              "attr": {
+                "style": {
+                  "background": "#00ffff"
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "edge boxes",
+          "id": 174,
+          "ideas": {
+            "1": {
+              "title": "http://blog.csdn.net/wsj998689aa/article/details/39476551",
+              "id": 179
+            }
+          }
         }
       }
     },
