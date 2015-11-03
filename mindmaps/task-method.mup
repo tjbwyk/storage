@@ -438,99 +438,137 @@
       "title": "ideals",
       "id": 140,
       "ideas": {
-        "4": {
-          "title": "improve YOLO",
-          "id": 148,
-          "ideas": {
-            "2": {
-              "title": "yolo with multiple scale and ratio",
-              "id": 143,
-              "attr": {
-                "style": {}
-              }
-            },
-            "3": {
-              "title": "yolo detect multiple obj with the same center",
-              "id": 146,
-              "attr": {
-                "style": {}
-              }
-            },
-            "4": {
-              "title": "output layer design",
-              "id": 151,
-              "attr": {
-                "icon": {
-                  "url": "internal:1/b64dd338-8fed-a312-8afc-cb43d4149855/",
-                  "width": 320,
-                  "height": 215,
-                  "position": "bottom"
-                },
-                "style": {}
-              }
-            },
-            "5": {
-              "title": "maybe only for proposal",
-              "id": 153
-            },
-            "6": {
-              "title": "maybe only for few classes",
-              "id": 154
-            }
-          },
+        "9": {
+          "title": "This is not as easy as simply defining a single network that includes both RPN and Fast R-CNN, and then optimizing it jointly with back-propagation. The reason is that Fast R-CNN training depends on fixed object proposals and it is not clear a priori if learning fast R-CNN while simultaneously changing the proposal mechanism will converge.",
+          "id": 182,
           "attr": {
-            "style": {}
-          }
-        },
-        "7": {
-          "title": "how about using FCN for proposals?",
-          "id": 164
-        },
-        "8": {
-          "title": "how to localize the head in a proposal",
-          "id": 167,
-          "ideas": {
-            "1": {
-              "title": "then combine the loss for both body and head",
-              "id": 168,
-              "ideas": {
-                "1": {
-                  "title": "classification contains direction",
-                  "id": 169
-                },
-                "2": {
-                  "title": "constraints between body and head",
-                  "id": 170,
-                  "ideas": {}
-                },
-                "3": {
-                  "title": "even more: other parts or context of body, for action classification",
-                  "id": 172
-                }
-              }
+            "style": {
+              "background": "#ff0000"
             }
           }
         },
-        "5.5": {
-          "title": "combining localization and classification loss",
-          "id": 166,
-          "attr": {
-            "style": {}
-          },
+        "10": {
+          "title": "end-to-end",
+          "id": 183,
           "ideas": {
             "1": {
-              "title": "proposal network remain the same, modify fast rcnn part",
-              "id": 142,
+              "title": "improve YOLO",
               "attr": {
                 "style": {}
               },
-              "ideas": {}
+              "ideas": {
+                "1": {
+                  "title": "yolo with multiple scale and ratio",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 188
+                },
+                "2": {
+                  "title": "yolo detect multiple obj with the same center",
+                  "attr": {
+                    "style": {}
+                  },
+                  "id": 189
+                },
+                "3": {
+                  "title": "output layer design",
+                  "attr": {
+                    "icon": {
+                      "url": "internal:1/b64dd338-8fed-a312-8afc-cb43d4149855/",
+                      "width": 320,
+                      "height": 215,
+                      "position": "bottom"
+                    },
+                    "style": {}
+                  },
+                  "id": 190
+                },
+                "4": {
+                  "title": "maybe only for proposal",
+                  "id": 191
+                },
+                "5": {
+                  "title": "maybe only for few classes",
+                  "id": 192
+                }
+              },
+              "id": 187
             },
             "2": {
               "title": "directly modify RPN for classification?",
-              "id": 161,
               "attr": {
                 "style": {}
+              },
+              "id": 193
+            }
+          }
+        },
+        "11": {
+          "title": "non-end-to-end",
+          "id": 184,
+          "ideas": {
+            "1": {
+              "title": "proposal",
+              "id": 185,
+              "ideas": {
+                "1": {
+                  "title": "how about using FCN semantic segmentation for proposals?",
+                  "id": 196,
+                  "attr": {
+                    "style": {}
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "classification",
+              "id": 186,
+              "ideas": {
+                "1": {
+                  "title": "proposal network remain the same, modify fast rcnn part",
+                  "attr": {
+                    "style": {}
+                  },
+                  "ideas": {},
+                  "id": 194
+                },
+                "2": {
+                  "title": "combining localization and classification loss",
+                  "attr": {
+                    "style": {}
+                  },
+                  "ideas": {},
+                  "id": 195
+                },
+                "3": {
+                  "title": "how to localize the head in a proposal",
+                  "ideas": {
+                    "1": {
+                      "title": "then combine the loss for both body and head",
+                      "ideas": {
+                        "1": {
+                          "title": "classification contains direction",
+                          "id": 199
+                        },
+                        "2": {
+                          "title": "constraints between body and head",
+                          "ideas": {},
+                          "id": 200
+                        },
+                        "3": {
+                          "title": "even more: other parts or context of body, for action classification",
+                          "id": 201
+                        }
+                      },
+                      "id": 198
+                    }
+                  },
+                  "id": 197,
+                  "attr": {
+                    "style": {}
+                  }
+                }
               }
             }
           }
